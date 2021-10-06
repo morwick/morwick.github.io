@@ -23,6 +23,6 @@ var x = setInterval(function() {
     // Jika hitungan mundur selesai, tulis beberapa teks 
     if (distance < 0) {
         clearInterval(x);
-        window.location.href = "index.html";
+        window.location.href = "isi.html";
     }
 }, 1000);
